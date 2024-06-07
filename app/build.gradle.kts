@@ -43,6 +43,7 @@ dependencies {
     implementation(libs.androidx.constraintlayout)
     //implementation(files("C:\\Ernesto\\Projects\\GalleryArt\\Beacons\\android-beacon-library-2.17.1.aar"))
     implementation(libs.android.beacon.library)
+    implementation(libs.androidx.bluetooth)
 //    implementation(fileTree(mapOf(
 //        "dir" to "C:\\Ernesto\\Projects\\GalleryArt\\Beacons",
 //        "include" to listOf("*.aar", "*.jar"),

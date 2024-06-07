@@ -6,6 +6,7 @@ import android.Manifest.permission.BLUETOOTH
 import android.Manifest.permission.BLUETOOTH_ADMIN
 import android.Manifest.permission.BLUETOOTH_CONNECT
 import android.Manifest.permission.BLUETOOTH_SCAN
+import android.content.Context
 import android.content.pm.PackageManager
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AlertDialog
@@ -25,7 +26,7 @@ class PermissionManager private constructor(private val activity: AppCompatActiv
     }
 
     companion object {
-        fun from(activity: AppCompatActivity) = PermissionManager(activity)
+        fun from(activity: Context) = PermissionManager(activity)
     }
 
     fun rationale(description: String): PermissionManager {
